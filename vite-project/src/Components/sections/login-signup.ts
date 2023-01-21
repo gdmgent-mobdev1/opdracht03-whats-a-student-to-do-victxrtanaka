@@ -1,9 +1,7 @@
-// import { auth, provider } from "./firebase.js";
 
 
-import { ProjectSection } from "./projectSection.js";
+import { ProjectSection } from "./projectSection.ts";
 
-// import { analytics, auth, provider } from "./firebase.js";
 
 var self;
 export class LoginSignup {
@@ -28,8 +26,6 @@ export class LoginSignup {
   constructor(mainDiv) {
     self = this;
     this.mainDiv = mainDiv;
-    // this.createLoginForm();
-    console.log(sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer"));
     this.createLoginForm();
   }
   createLoginForm() {
@@ -88,7 +84,6 @@ export class LoginSignup {
     this.formDiv.appendChild(this.form);
     this.profileImage = document.createElement("img");
     this.form.appendChild(this.profileImage);
-    // <input type="text" placeholder="full name" />
     this.fullName = document.createElement("input");
     this.fullName.type = "text";
     this.fullName.placeholder = "full name";
