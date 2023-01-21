@@ -1,4 +1,4 @@
-import { ProjectSection } from "./projectSection.js";
+import { ProjectSection } from "./projectSection.ts";
 
 var self;
 var projectDetails = ["name", "Desciption", "date"];

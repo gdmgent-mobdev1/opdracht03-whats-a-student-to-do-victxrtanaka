@@ -1,6 +1,6 @@
 import { StartScene } from "../scenes/startScene.js";
-import { ProjectSection } from "../sections/projectSection.js";
-import { ProfileData, setDataToStorage } from "./profileData.js";
+import { ProjectSection } from "../sections/projectSection.ts";
+import { ProfileData, setDataToStorage } from "./profileData.ts";
 
 var self;
 var position = 60;

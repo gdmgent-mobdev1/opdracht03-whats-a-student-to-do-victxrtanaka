@@ -1,6 +1,6 @@
-import { ProjectDetails } from "../sections/projectDetails.js";
-import { ProjectSection } from "../sections/projectSection.js";
-import { getDatafromStorage } from "./profileData.js";
+import { ProjectDetails } from "../sections/projectDetails.ts";
+import { ProjectSection } from "../sections/projectSection.ts";
+import { getDatafromStorage } from "./profileData.ts";
 
 var self;
 var projectList = ["heello", "hlo", "how", "when"];

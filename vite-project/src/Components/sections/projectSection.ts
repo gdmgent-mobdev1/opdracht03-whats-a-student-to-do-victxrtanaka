@@ -1,5 +1,5 @@
-import { AddNewProject } from "../ProjectComponent/addNewProject.js";
-import { ViewProject } from "../ProjectComponent/viewProjects.js";
+import { AddNewProject } from "../ProjectComponent/addNewProject.ts";
+import { ViewProject } from "../ProjectComponent/viewProjects.ts";
 
 var self;
 export class ProjectSection {

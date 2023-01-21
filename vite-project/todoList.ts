@@ -1,5 +1,5 @@
 
-import { StartScene } from "./src/Components/scenes/startScene.js";
+import { StartScene } from "./src/Components/scenes/startScene.ts";
 declare const window: any;
 declare const app: any;
 declare global {

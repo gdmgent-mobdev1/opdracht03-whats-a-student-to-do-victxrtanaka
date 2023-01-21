@@ -1,5 +1,5 @@
 
-import { ProjectSection } from "../sections/projectSection.js";
+import { ProjectSection } from "../sections/projectSection.ts";
 
 var divId = "startSceneDiv";
 export class StartScene {
@@ -7,7 +7,7 @@ export class StartScene {
   public scene: any;
 
   constructor(mainDiv) {
-    console.log("<<<<<<<<<<<<<<<<<<<<<<<");
+    console.log("start");
     this.mainDiv = mainDiv;
     this.scene = new ProjectSection(mainDiv);
 

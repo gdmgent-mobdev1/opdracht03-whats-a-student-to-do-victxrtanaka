@@ -1,5 +1,5 @@
 import { CreateForm } from "../Elements/createForm.js";
-import { ProjectSection } from "../sections/projectSection.js";
+import { ProjectSection } from "../sections/projectSection.ts";
 import { ViewProjects } from "./viewProjects.js";
 
 var projectDetails = ["Name", "description", "DeadLine", "CheckList"];
