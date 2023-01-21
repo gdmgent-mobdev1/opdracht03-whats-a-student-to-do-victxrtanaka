@@ -23,5 +23,9 @@
     "import": "^0.0.6",
     "typescript": "^4.9.4",
     "vite": "^3.2.3"
+  },
+  "dependencies": {
+    "firebase": "^9.15.0",
+    "firebase-tools": "^11.19.0"
   }
 }
