@@ -21,7 +21,16 @@ body {
   padding-top: -10%;
   background-image: linear-gradient(100deg, #c7a1a1, #062e3f);
 }
-
+.loginDivClass {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: beige;
+  top: 10vh;
+  height: 40vh;
+  width: 40vw;
+}
 .formClass {
   top: 13vh;
   position: relative;
@@ -32,7 +41,47 @@ body {
   right: 2vw;
   gap: 3vh;
 }
-
+#loginButtonId {
+  position: relative;
+  background-color: coral;
+  height: 4vh;
+  width: 8vw;
+  left: 12vw;
+}
+#signupButtonId {
+  position: relative;
+  background-color: coral;
+  height: 4vh;
+  width: 8vw;
+  left: 12vw;
+}
+.signupDivClass {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: beige;
+  top: 10vh;
+  height: 40vh;
+  width: 40vw;
+}
+.signupForm {
+  top: 2vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  left: 5vw;
+  right: 2vw;
+  gap: 3vh;
+}
+#newSignupButtonId {
+  position: relative;
+  background-color: coral;
+  height: 4vh;
+  width: 8vw;
+  left: 12vw;
+}
 #contentSectionDivId {
   position: relative;
   top: 2vh;
@@ -167,8 +216,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4vh;
+  /* height: 50vh; */
   width: 50vw;
   background-image: linear-gradient(100deg, #c7a1a1, #21ade9);
+  /* To remove the bullets of unordered list */
+  /* list-style: none; */
 }
 .listTaskClass {
   position: relative;
@@ -227,6 +279,7 @@ body {
   position: relative;
   display: flex;
   top: 20vh;
+  /* height: 40vh; */
   width: 50vw;
   gap: 5vh;
   background-image: linear-gradient(100deg, #c7a1a1, #a4b334);
@@ -346,6 +399,7 @@ body {
   display: flex;
   top: 15vh;
   left: 2.5vw;
+  /* height: 40vh; */
   width: 60vw;
   gap: 5vh;
   background-image: linear-gradient(100deg, #c7a1a1, #30a0d0);

@@ -1,5 +1,6 @@
 
-import { ProjectSection } from "../sections/projectSection.ts";
+
+import { LoginSignup } from "../sections/login-signup.ts";
 
 var divId = "startSceneDiv";
 export class StartScene {
@@ -7,9 +8,8 @@ export class StartScene {
   public scene: any;
 
   constructor(mainDiv) {
-    console.log("start");
+    console.log("<<<<<<<<<<<<<<<<<<<<<<<");
     this.mainDiv = mainDiv;
-    this.scene = new ProjectSection(mainDiv);
-
+    this.scene = new LoginSignup(mainDiv);
   }
 }
