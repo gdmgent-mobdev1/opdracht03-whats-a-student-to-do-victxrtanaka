@@ -26,7 +26,7 @@ export function setDataToStorage(profileData) {
   //   });
   const data = JSON.stringify(existingData);
   if (data) {
-    localStorage.setItem("Profile", data);
+    localStorage.setItem("Project details", data);
   }
 }
 function jsonToArray(json) {
@@ -55,6 +55,6 @@ function dataPushToArray(jsonData, profileData) {
   return jsonData;
 }
 export function getDatafromStorage() {
-  const data = JSON.parse(localStorage.getItem("Profile"));
+  const data = JSON.parse(localStorage.getItem("Project details"));
   return data;
 }
