@@ -110,6 +110,10 @@ export class ProjectDetails {
     this.saveChangesButton = document.createElement("button");
     this.saveChangesButton.innerHTML = "Save Changes";
     this.saveChangesButton.id = "saveChangesButtonID";
+    this.saveChangesButton.onclick = function () {
+      self.projectDetailDiv.remove();
+      new ProjectSection(self.mainDiv);
+    };
     this.projectDetailDiv.appendChild(this.saveChangesButton);
   }
 }

@@ -71,18 +71,18 @@ export class AddNewProject {
     this.addTaskButton.id = "addTaskButtonId";
     this.addTaskButton.innerText = "Add Task";
     this.addTaskButton.onclick = function () {
-      // console.log(self.task.value);
+      //console.log(self.task.value);
       position = position + taskId * 3.5;
       checkList.push(self.task.value);
       self.createTaskList(self.task.value);
       self.task.value = "";
+
     };
     this.checkListForm.appendChild(this.addTaskButton);
     // <div id="myUnOrdList"></div>
     this.unOrderList = document.createElement("div");
     this.unOrderList.id = "unOrderListId";
     console.log(">>>>>>>>>>.");
-    console.log(position);
     this.unOrderList.style.height = "" + position + "vh";
     this.checkListDiv.appendChild(this.unOrderList);
     // <ul class="todo-list">

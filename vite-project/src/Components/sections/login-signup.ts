@@ -117,13 +117,14 @@ export class LoginSignup {
       //   self.signInWithGoogle();
 
       //   console.log(auth);
-      console.log("hello");
+      console.log("Successfully made an account.");
+      self.login();
+
       //   signInWithRedirect(auth, provider);
       //   console.log(auth);
       //   auth.signInWithPopup(provider);
       // self.signInWithGoogle();
 
-      self.createLoginForm();
     };
     this.form.appendChild(this.newSignupButton);
   }
