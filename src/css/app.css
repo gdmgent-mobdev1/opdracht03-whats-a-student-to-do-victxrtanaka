@@ -1,0 +1,59 @@
+.hidden {
+  display: none !important;
+}
+
+/* GENERAL */
+
+html,
+body {
+  background-color: #a4c6dd;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+#app button {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+}
+
+#app button:hover {
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: #ccc685;
+  cursor: pointer;
+}
+
+#app child-selector {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* WELCOME  */
+
+#welkomPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logoImg {
+  border-radius: 3rem;
+  width: 10rem;
+}
+
+.welkomContext {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.welkomContext p {
+  display: flex;
+  justify-content: center;
+}

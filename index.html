@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gotTodo</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      
+      <!-- WELKOM -->
+      <div id="welkomPage">
+        <div class="welkomContext">
+          <img src="./src/img/logo.png" class="logoImg" />
+          <h1>Para Todos</h1>
+          <p>
+            Welcome to ParaTodos – your go-to platform for effortless task
+            organization. Seamlessly create, prioritize, and manage tasks across
+            various projects, ensuring nothing falls through the cracks.
+            Experience streamlined task addition, editing, and completion,
+            enabling you to stay focused on your key objectives. Elevate your
+            productivity with ParaTodos and take control of your task management
+            like never before.
+          </p>
+        </div>
+        <div class="welkomBtns">
+          <button id="loginBtn" class="premiereBtn">Log in</button>
+          <button id="signupBtn" class="premiereBtn">Sign up</button>
+        </div>
+      </div>
+
+      <!-- LOGIN-->
+      <div id="login" class="">
+        <div class="logo">
+          <!-- <img src="./src/img/notepad.png" alt=""> -->
+          <h1>Para Todos</h1>
+        </div>
+        <div class="inputveld">
+          <label>email</label>
+          <input id="emailLogin" type="email" />
+        </div>
+
+        <div class="inputveld">
+          <label>passwoord</label>
+          <input id="passwordLogin" type="password" />
+        </div>
+
+        <p class="or">or</p>
+        <button id="googleLogin" class="secondaireBtn">Via Google</button>
+        <button id="loginChatBtn" class="premiereBtn">log in</button>
+        <div class="noAccount">
+          <p>Dont have an account?</p>
+          <button id="accountSignup" class="tertaireBtn">Sign up</button>
+        </div>
+      </div>
+
+      <!-- REGISTER -->
+      <div id="signup" class="">
+        <div class="logo">
+          <!-- <img src="./src/img/notepad.png" alt=""> -->
+          <h1>Para Todos</h1>
+        </div>
+        <div class="inputveld">
+          <label>Name</label>
+          <input id="nameSignup" type="text" />
+        </div>
+
+        <div class="inputveld">
+          <label>Last name</label>
+          <input id="lastNameSignup" type="text" />
+        </div>
+
+        <div class="inputveld">
+          <label>email</label>
+          <input id="emailSignup" type="email" />
+        </div>
+
+        <div class="inputveld">
+          <label>passwoord</label>
+          <input id="passwordsignup" type="password" />
+        </div>
+
+        <p class="or">or</p>
+        <button id="googleSignup" class="secondaireBtn">Via Google</button>
+        <button id="signupChatBtn" class="premiereBtn">Sign up</button>
+        <div class="allreadyAccount">
+          <p>allready have an account?</p>
+          <button id="accountLogin" class="tertaireBtn">Log in</button>
+        </div>
+      </div>
+
+      <!--HOME  -->
+      <div id="homePage" class="">
+        <nav>
+          <h2>Projects</h2>
+          <div class="imgNav">
+            <button id="add" class="">Add a Project</button>
+            <button id="accountImg" class="">My account</button>
+          </div>
+        </nav>
+
+        <div class="projects" id="projects"></div>
+      </div>
+    </div>
+
+    <!--NEW PROJECT  -->
+    <div id="addProject" class="">
+      <nav>
+        <button id="goBack">Back</button>
+        <h2>New project</h2>
+      </nav>
+      <div class="newProject">
+        <div class="inputveld">
+          <label>Name Project</label>
+          <input id="nameProject" type="text" />
+        </div>
+
+        <div class="inputveld">
+          <label>Description</label>
+          <input id="descriptionProject" type="text" />
+        </div>
+
+        <button id="btnNewProject" class="premiereBtn">Create project</button>
+      </div>
+    </div>
+
+    <!-- TODOS (inside project) -->
+    <div id="projectDetailsScherm" class="">
+      <nav class="navToDo">
+        <div class="textToDo">
+          <img id="arrowTodo" src="/src/img/arrow.png" alt="" />
+          <h2 id="nameProject">naam project</h2>
+        </div>
+
+        <div class="timer">
+          <p id="timer">00:00:00</p>
+          <button id="timerBtn" class="premiereBtn">start timer</button>
+        </div>
+      </nav>
+
+      <div id="cardsTodo">
+        <input type="text" id="addTodoListInput" class="comment" />
+        <button id="addTodoListButton" class="btn-save">Add list</button>
+        <div id="list"></div>
+      </div>
+    </div>
+    <script type="module" src="./src/app.ts"></script>
+  </body>
+</html>
