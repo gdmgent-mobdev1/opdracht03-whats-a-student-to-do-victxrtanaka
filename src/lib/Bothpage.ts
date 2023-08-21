@@ -6,7 +6,7 @@ export class BothPage extends Page {
     private signup: HTMLButtonElement;
 
     constructor(app: MyApp) {
-        super("both", app);
+        super("welkomPage", app);
         this.login = document.getElementById("loginBtn") as HTMLButtonElement;
         this.signup = document.getElementById("signupBtn") as HTMLButtonElement;
     }

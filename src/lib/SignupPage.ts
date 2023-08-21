@@ -1,6 +1,6 @@
 import { MyApp } from "../app";
 import { Page } from "./Page";
-import { FireBase } from "./Firebase";
+import  FireBase from "./Firebase";
 
 
 export class SignupPage extends Page {
@@ -43,7 +43,7 @@ export class SignupPage extends Page {
         }
 
         this.googleLogin.onclick = () => {
-            FireBase.get().signinPopup(() => {
+            FireBase.get().signInGoogle(() => {
 
                 this.hide();
                 this.app.homePage.show();
