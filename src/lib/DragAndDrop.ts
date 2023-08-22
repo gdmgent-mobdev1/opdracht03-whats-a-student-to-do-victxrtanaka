@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 export function dragstartHandler(ev: DragEvent): void {
   // Add the target element's id to the data transfer object
   if (ev.target instanceof HTMLElement && ev.dataTransfer != null) {
