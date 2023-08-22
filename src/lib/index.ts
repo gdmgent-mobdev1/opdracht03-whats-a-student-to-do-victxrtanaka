@@ -9,8 +9,6 @@ interface State {
 }
 
 
-
-
 type Property = keyof State;
 
 export { root };
